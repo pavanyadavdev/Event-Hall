@@ -115,10 +115,10 @@ section p {
 }
 
 .video-row {
-    max-width:62%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-right: 450px;
 }
 
 #prices {
