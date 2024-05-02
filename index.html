@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Hall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Function Hall</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Preview</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#map">Location</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2>About Our Function Hall</h2>
+            <p>Welcome to our elegant function hall, the perfect venue for your special events. Whether you're hosting a wedding, birthday celebration, corporate event, or any other occasion, we're here to make it unforgettable.</p>
+            <p>Our function hall offers a spacious and luxurious environment, equipped with state-of-the-art facilities to accommodate your needs. With our dedicated staff and attention to detail, we ensure that every aspect of your event is executed flawlessly.</p>
+            <p>Experience the charm and sophistication of our function hall, where memories are made and celebrations come to life.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li><strong>Decoration:</strong> Transform our function hall into your dream venue with customizable decorations tailored to your theme and preferences.</li>
+                <li><strong>Catering:</strong> Indulge in a delightful culinary experience with our expert catering services, offering a diverse menu of gourmet dishes to tantalize your taste buds.</li>
+                <li><strong>Rooms:</strong> Relax and unwind in our comfortable and luxurious rooms, providing a peaceful retreat for you and your guests before and after the event.</li>
+                <li><strong>DJ:</strong> Dance the night away with our professional DJ services, setting the mood with a vibrant selection of music to keep the party going.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div id="image-gallery">
+                <div class="row">
+                    <img src="image1.jpeg" alt="Hall 1">
+                    <img src="image2.jpeg" alt="Hall 2">
+                    <img src="image3.jpeg" alt="Hall 3">
+                    <img src="image4.jpeg" alt="Hall 4">
+                </div>
+                <div class="image-row">
+                    <img src="image5.jpeg" alt="Hall 5">
+                    <img src="image6.jpeg" alt="Hall 6">
+                    <img src="image7.jpeg" alt="Hall 7">
+                    <img src="image11.jpeg" alt="Hall 11">
+                </div>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Preview Of Hall</h2>
+            <div class="video-row">
+                <div class="video-container">
+                    <iframe width="250%" height="315" src="https://www.youtube.com/embed/q5ny8dsqWIs?autoplay=1&mute=1&loop=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- <video controls autoplay muted loop>
+                    <source src="https://www.youtube.com/embed/q5ny8dsqWIs?autoplay=1&mute=1&loop=1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Events</h2>
+            <div class="event-row">
+                <div class="event">
+                    <h3>Wedding</h3>
+                    <img src="image8.jpeg" alt="Wedding Image">
+                    <button class="price-button" data-event="Wedding">Click For Prices</button>
+                    <p class="price" style="display: none;">Wedding Price For One Day: 30,000/-</p>
+                </div>
+                <div class="event">
+                    <h3>Birthday</h3>
+                    <img src="image10.jpeg" alt="Birthday Image">
+                    <button class="price-button" data-event="Birthday">Click For Prices</button>
+                    <p class="price" style="display: none;">Birthday Event Price For One Day: 25,000/-</p>
+                </div>
+                <div class="event">
+                    <h3>Corporate Events</h3>
+                    <img src="image9.jpeg" alt="Corporate Events Image">
+                    <button class="price-button" data-event="Corporate">Click For Prices</button>
+                    <p class="price" style="display: none;">Corporate Event Price For One Day: 35,000/-</p>
+                </div>
+            </div>
+        </section>
+                  
+        <section id="contact">
+            <div class="contact-container">
+                <div class="form-container">
+                    <h1>Contact Form</h1>
+                    <h3>GET IN TOUCH</h3>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <!-- <form action="/send-email" method="POST"> -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+        
+                        <label for="event_type">Event Type:</label>
+                        <select id="event_type" name="event_type">
+                            <option value="select">Select</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="corporate">Corporate Event</option>
+                            <!-- Add more options as needed -->
+                        </select>
+        
+                        <label for="date">Event Date:</label>
+                        <br>
+                        <input type="date" id="date" name="date"><br>
+                        <br>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone">
+        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="get-in-touch">
+                    <p class="contact-info">SUBMIT YOUR ENQUIRY</p>
+                    <p class="contact-info">EMAIL TO: yadavpavan9704@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="map">
+            <div class="map-container">
+                <h2 style="text-align: center;">Location</h2>
+                <!-- Embedded Google Maps with provided latitude and longitude -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62107.75046129378!2d78.572385!3d13.366784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb27eb3b8ce6059%3A0x9bf361635fb66a8a!2sPunganur%2C%20Andhra%20Pradesh%20517247%2C%20India!5e0!3m2!1sen!2sus!4v1714489064249!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62107.75046129378!2d78.572385!3d13.366784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb27eb3b8ce6059%3A0x9bf361635fb66a8a!2sPunganur%2C%20Andhra%20Pradesh%20517247%2C%20India!5e0!3m2!1sen!2sus!4v1714489064249!5m2!1sen!2sus" width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Function Hall. All rights reserved.</p>
+        <p>OwnerName:Pavan</p>
+        <p>Contact:+91 9704680396</p>
+        <p>Address:Punganur</p>
+    </footer>
+
+   
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+// Function to handle button click to display event prices
+document.addEventListener('DOMContentLoaded', function() {
+    const priceButtons = document.querySelectorAll('.price-button');
+
+    priceButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const event = this.dataset.event;
+            const price = this.nextElementSibling;
+
+            if (price.style.display === 'none') {
+                price.style.display = 'block';
+            } else {
+                price.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Function to handle form submission
+function sendEmail() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const event_type = document.getElementById("event_type").value;
+    const date = document.getElementById("date").value;
+
+    if (name == '' || email == '' || phone == '' || event_type == '' || date == '') {
+        alert("Please fill out all fields");
+        return;
+    }
+
+    if (email != "yadavpavan9704@gmail.com") {
+        alert("Invalid Email. Please enter the email address displayed on the right side of the form. The email field cannot be empty.");
+        return;
+    }
+
+    Email.send({
+        SecureToken:"3ae98dc8-d06b-473c-9dc3-8051a5b0dc88",
+        To: 'pavankumaryadav9704@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New form",
+        Body: "Name: " + document.getElementById("name").value +
+            "<br> Phone No: " + document.getElementById("phone").value +
+            "<br> EventType: " + document.getElementById("event_type").value +
+            "<br> EventDate: " + document.getElementById("date").value
+    })
+    .then(
+        message => alert("Form Submitted Successful")
+    );
+}
+
+</script>
+
+</body>
+</html>
+<!-- </html>A8DDB422AAF5790227D39700BB3815E7D7F0 -->
