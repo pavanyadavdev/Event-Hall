@@ -177,6 +177,7 @@ section p {
     text-align: right;
     margin-top: 150px; /* Adjust margin as needed */
     margin-right: 40px;
+     overflow: hidden;
     border: 2px solid #000; /* Add border to the container */
     padding: 10px; /* Add padding for better spacing */
     animation: slideIn 2s forwards; /* Apply slide-in animation */
