@@ -108,6 +108,7 @@ section p {
 
 #videos {
     padding: 20px;
+     overflow: hidden;
 }
 
 #videos h2 {
