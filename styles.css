@@ -176,6 +176,7 @@ section p {
     width: 30%;
     text-align: right;
     margin-top: 150px; /* Adjust margin as needed */
+    margin-right: 40px;
     border: 2px solid #000; /* Add border to the container */
     padding: 10px; /* Add padding for better spacing */
     animation: slideIn 2s forwards; /* Apply slide-in animation */
@@ -232,7 +233,7 @@ input[type="submit"]:hover {
 
 /* Set max width for map container */
 .map-container {
-    max-width: 70%; /* Adjust as needed */
+    max-width: 100%; /* Adjust as needed */
 }
 
 #services ul {
