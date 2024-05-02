@@ -234,6 +234,7 @@ input[type="submit"]:hover {
 /* Set max width for map container */
 .map-container {
     max-width: 100%; /* Adjust as needed */
+    overflow: hidden;
 }
 
 #services ul {
