@@ -115,10 +115,10 @@ section p {
 }
 
 .video-row {
+    max-width:62%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-right: 450px;
 }
 
 #prices {
@@ -188,7 +188,7 @@ section p {
     opacity: 0; /* Initially hide the elements */
     text-align: center;
     color:blueviolet;
-     overflow: hidden;
+    overflow: auto;
     animation: slideIn 2s forwards; /* Apply slide-in animation */
 }
 
@@ -248,7 +248,7 @@ input[type="submit"]:hover {
 
 #services ul li {
     width: calc(25% - 20px); /* Adjust width as needed */
-    overflow: hidden;
+    overflow: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
