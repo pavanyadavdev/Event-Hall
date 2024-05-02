@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     font-family: Arial, sans-serif; /* Adjust font family as needed */
     color: #121010; /* Default text color */
+    overflow-x: hidden;
 }
 
 /* h1{
@@ -177,7 +178,6 @@ section p {
     text-align: right;
     margin-top: 150px; /* Adjust margin as needed */
     margin-right: 40px;
-     overflow: hidden;
     border: 2px solid #000; /* Add border to the container */
     padding: 10px; /* Add padding for better spacing */
     animation: slideIn 2s forwards; /* Apply slide-in animation */
@@ -188,6 +188,7 @@ section p {
     opacity: 0; /* Initially hide the elements */
     text-align: center;
     color:blueviolet;
+     overflow: hidden;
     animation: slideIn 2s forwards; /* Apply slide-in animation */
 }
 
@@ -247,6 +248,7 @@ input[type="submit"]:hover {
 
 #services ul li {
     width: calc(25% - 20px); /* Adjust width as needed */
+    overflow: hidden;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
