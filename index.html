@@ -122,7 +122,7 @@
                         <input type="date" id="date" name="date"><br>
                         <br>
                         <label for="phone">Phone number:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" max="10">
         
                         <input type="submit" value="Submit">
                     </form>
@@ -188,6 +188,11 @@ function sendEmail() {
 
     if (email != "yadavpavan9704@gmail.com") {
         alert("Invalid Email. Please enter the email address displayed on the right side of the form. The email field cannot be empty.");
+        return;
+    }
+
+     if(phone.length < 10){
+        alert("please enter 10 digit Phone Number");
         return;
     }
 
